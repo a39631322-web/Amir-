@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mocha Cake | کیک‌های خاص</title>
+
+<style>
+
+function copyID(){
+
+let text="@Cake_mocha";
+
+navigator.clipboard.writeText(text)
+.then(()=>{
+alert("آیدی کپی شد ✅");
+})
+.catch(()=>{
+alert("آیدی: @Cake_mocha");
+});
+
+}
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Vazirmatn,tahoma;
+}
+
+
+body{
+
+background:#fff8f0;
+color:#3b2418;
+overflow-x:hidden;
+
+}
+
+
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+padding:30px;
+
+background:
+
+radial-gradient(circle at top,#d9a66b,#5a301b);
+
+color:white;
+
+}
+
+
+
+.hero-box{
+
+max-width:700px;
+
+}
+
+
+
+.logo{
+
+font-size:90px;
+
+animation:float 3s infinite;
+
+}
+
+
+
+@keyframes float{
+
+50%{
+transform:translateY(-15px);
+}
+
+}
+
+
+
+.hero h1{
+
+font-size:55px;
+
+margin:20px 0;
+
+font-weight:800;
+
+}
+
+
+
+.hero p{
+
+font-size:22px;
+
+line-height:2;
+
+}
+
+
+
+.btn{
+
+display:inline-block;
+
+margin-top:30px;
+
+padding:16px 45px;
+
+border-radius:50px;
+
+background:#dca15c;
+
+color:white;
+
+text-decoration:none;
+
+font-size:18px;
+
+box-shadow:0 10px 30px #0003;
+
+}
+
+
+
+.section{
+
+padding:90px 25px;
+
+}
+
+
+
+.title{
+
+text-align:center;
+
+font-size:38px;
+
+margin-bottom:50px;
+
+color:#6b3b20;
+
+}
+
+
+
+.products{
+
+max-width:1200px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(260px,1fr));
+
+gap:35px;
+
+}
+
+
+
+.product{
+
+background:white;
+
+padding:35px 25px;
+
+border-radius:35px;
+
+text-align:center;
+
+box-shadow:
+
+0 20px 40px #0001;
+
+transition:.4s;
+
+}
+
+
+
+.product:hover{
+
+transform:translateY(-15px);
+
+}
+
+
+
+.product .emoji{
+
+font-size:75px;
+
+margin-bottom:20px;
+
+}
+
+
+
+.product h3{
+
+font-size:25px;
+
+color:#8a4c27;
+
+margin-bottom:15px;
+
+}
+
+
+
+.product p{
+
+line-height:2;
+
+}
+
+
+
+.tag{
+
+display:inline-block;
+
+background:#f2d2ac;
+
+padding:8px 20px;
+
+border-radius:30px;
+
+margin-top:20px;
+
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<section class="hero">
+
+
+<div class="hero-box">
+
+
+<div class="logo">
+🍰
+</div>
+
+
+<h1>
+Mocha Cake
+</h1>
+
+
+<p>
+کیک‌های خانگی و سفارشی
+<br>
+برای لحظه‌های خاص شما
+</p>
+
+
+<a href="#products" class="btn">
+مشاهده کیک‌ها
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+<section class="section" id="products">
+
+
+<h2 class="title">
+محصولات ویژه ✨
+</h2>
+
+
+
+<div class="products">
+
+
+
+<div class="product">
+
+<div class="emoji">
+🎂
+</div>
+
+<h3>
+کیک تولد سفارشی
+</h3>
+
+<p>
+طراحی اختصاصی طبق سلیقه شما
+</p>
+
+<span class="tag">
+Special Cake
+</span>
+
+</div>
+
+
+
+<div class="product">
+
+<div class="emoji">
+⚽
+</div>
+
+<h3>
+کیک فوتبالی
+</h3>
+
+<p>
+تم ورزشی مورد علاقه پسرا
+</p>
+
+<span class="tag">
+Football Cake
+</span>
+
+</div>
+
+
+
+<div class="product">
+
+<div class="emoji">
+🧁
+</div>
+
+<h3>
+مینی کیک
+</h3>
+
+<p>
+کوچک، خاص و مناسب هدیه
+</p>
+
+<span class="tag">
+Mini Cake
+</span>
+
+</div><div class="card">
+
+<div class="icon">🍫</div>
+
+<h3>
+کیک خیس شکلاتی
+</h3>
+
+<p>
+شکلاتی، نرم و خوشمزه با طعم خاص
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="icon">🍡</div>
+
+<h3>
+موچی
+</h3>
+
+<p>
+با طعم‌ها و فیلینگ‌های مورد علاقه شما
+</p>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+
+
+
+
+<section class="section"
+style="background:#4a2515;color:white;border-radius:40px;width:95%;margin:auto;">
+
+
+<h2 class="title" style="color:#f2c88f;">
+چرا Mocha Cake؟ 🤎
+</h2>
+
+
+
+<div class="products">
+
+
+<div class="card">
+
+<div class="icon">
+⭐
+</div>
+
+<h3>
+مواد اولیه با کیفیت
+</h3>
+
+<p>
+استفاده از بهترین مواد برای طعمی عالی
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="icon">
+🎨
+</div>
+
+<h3>
+طراحی اختصاصی
+</h3>
+
+<p>
+کیک طبق سلیقه و مناسبت شما
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="icon">
+🚚
+</div>
+
+<h3>
+تحویل منظم
+</h3>
+
+<p>
+آماده‌سازی دقیق و مطمئن
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="icon">
+💛
+</div>
+
+<h3>
+طعم‌های متنوع
+</h3>
+
+<p>
+انتخاب طعم و فیلینگ دلخواه
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="section" id="order">
+
+
+<h2 class="title">
+ثبت سفارش 📩
+</h2>
+
+
+
+<div class="card"
+style="max-width:700px;margin:auto;">
+
+
+<p>
+برای سفارش پیام دهید:
+</p>
+
+
+<h2 style="margin:25px;color:#7b401f;">
+@Cake_mocha
+</h2>
+
+
+<button class="btn" onclick="copyID()">
+کپی آیدی
+</button>
+
+
+<br><br>
+
+
+<a class="btn"
+href="https://splus.ir/httpssplusirMocha_cake2026">
+
+کانال سروش
+
+</a>
+
+
+<p style="margin-top:30px;line-height:2;">
+
+⏰ لطفاً حداقل یک هفته قبل سفارش ثبت شود.
+
+<br>
+
+🍰 سفارش انواع کیک تولد، مینی کیک،
+کیک خیس شکلاتی و موچی پذیرفته می‌شود.
+
+</p>
+
+
+</div>
+
+
+</section><footer style="
+background:#3b2115;
+color:white;
+padding:50px 20px;
+margin-top:50px;
+border-radius:35px 35px 0 0;
+text-align:center;
+">
+
+
+<h2 style="
+font-size:35px;
+color:#e7b36b;
+">
+Mocha Cake 🍰
+</h2>
+
+
+<p style="
+line-height:2;
+margin:20px;
+">
+
+کیک‌هایی که با عشق برای لحظه‌های شیرین شما ساخته می‌شوند
+
+</p>
+
+
+
+<div style="
+margin:25px;
+font-size:20px;
+">
+
+
+<p>
+ارتباط با ما
+</p>
+
+
+<p>
+📱 @Cake_mocha
+</p>
+
+
+<p>
+📍 زابل، ایران
+</p>
+
+
+</div>
+
+
+
+<a class="btn"
+href="https://splus.ir/httpssplusirMocha_cake2026">
+
+کانال رسمی سروش
+
+</a>
+
+
+
+<p style="
+margin-top:35px;
+font-size:14px;
+">
+
+تمامی حقوق محفوظ است © 2026 Mocha Cake
+
+</p>
+
+
+
+</footer>
+
+
+
+
+
+<script>
+
+
+function copyID(){
+
+navigator.clipboard.writeText("@Cake_mocha");
+
+alert("آیدی کپی شد ✅");
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>
