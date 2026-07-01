@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>بستنی غدیر و قادر</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:tahoma,Arial;
+}
+
+
+body{
+    background:#fff7ed;
+    color:#333;
+}
+
+
+/* header */
+
+header{
+
+    background:linear-gradient(135deg,#287a45,#58b368);
+    color:white;
+    padding:35px 20px;
+    text-align:center;
+
+}
+
+
+header h1{
+
+    font-size:36px;
+    margin-bottom:10px;
+
+}
+
+
+
+header p{
+
+    font-size:17px;
+
+}
+
+
+
+
+
+/* hero */
+
+.hero{
+
+    background:white;
+    padding:70px 20px;
+    text-align:center;
+
+}
+
+
+
+.hero h2{
+
+    font-size:42px;
+    color:#287a45;
+
+}
+
+
+.hero h2 span{
+
+    color:#e76f51;
+
+}
+
+
+
+.hero p{
+
+    margin-top:20px;
+    font-size:18px;
+
+}
+
+
+
+
+/* اطلاعات */
+
+.info{
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:30px;
+
+}
+
+
+
+.info-card{
+
+    background:white;
+    width:200px;
+    padding:20px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 8px 20px #0002;
+
+}
+
+
+
+
+
+
+
+/* منو */
+
+
+.menu-title{
+
+    text-align:center;
+    font-size:35px;
+    color:#287a45;
+    margin:35px 0;
+
+}
+
+
+
+
+.tabs{
+
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+
+}
+
+
+
+
+.tab{
+
+    border:none;
+    background:white;
+    color:#287a45;
+    padding:15px 35px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:17px;
+    box-shadow:0 5px 15px #0002;
+
+}
+
+
+
+.tab.active{
+
+    background:#287a45;
+    color:white;
+
+}
+
+
+
+
+
+
+.products{
+
+    width:90%;
+    max-width:1100px;
+    margin:35px auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:25px;
+
+}
+
+
+
+
+.product{
+
+    background:white;
+    padding:25px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 8px 25px #0002;
+
+}
+
+
+
+.product h3{
+
+    color:#287a45;
+    margin-bottom:15px;
+
+}
+
+
+
+.price{
+
+    color:#e76f51;
+    font-size:20px;
+    font-weight:bold;
+    margin:15px;
+
+}
+
+
+
+.add-btn{
+
+    width:100%;
+    background:#287a45;
+    color:white;
+    border:none;
+    padding:13px;
+    border-radius:25px;
+    cursor:pointer;
+
+}
+
+
+
+.hidden{
+
+    display:none;
+
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+
+<header>
+
+<h1>
+🍦 بستنی غدیر و قادر
+</h1>
+
+<p>
+طعم تازه، کیفیت واقعی
+</p>
+
+</header>
+
+
+
+
+<section class="hero">
+
+<h2>
+طعم <span>شیرین لحظه‌ها</span> 🍨
+</h2>
+
+<p>
+بستنی، آبمیوه طبیعی و معجون‌های ویژه
+</p>
+
+</section>
+
+
+
+
+
+<section class="info">
+
+
+<div class="info-card">
+📍
+<br>
+زابل، طالقانی ۲۶
+</div>
+
+
+
+<div class="info-card">
+🕔
+<br>
+۵ عصر تا ۲ بامداد
+</div>
+
+
+
+<div class="info-card">
+🚗
+<br>
+ارسال داخل شهر
+</div>
+
+
+
+<div class="info-card">
+☎️
+<br>
+09393471474
+</div>
+
+
+
+</section>
+
+
+
+
+<h2 class="menu-title">
+منوی محصولات
+</h2>
+
+
+
+<div class="tabs">
+
+<button class="tab active" onclick="showMenu('ice')">
+🍨 بستنی‌ها
+</button>
+
+
+<button class="tab" onclick="showMenu('juice')">
+🥤 آبمیوه‌ها
+</button>
+
+
+<button class="tab" onclick="showMenu('shake')">
+🍌 معجون‌ها
+</button>
+
+
+</div>
+
+<!-- بخش بستنی ها -->
+
+<section id="ice" class="products">
+
+
+<div class="product">
+
+<h3>🍦 بستنی ویژه</h3>
+
+<p>بستنی مخصوص غدیر</p>
+
+<div class="price">
+۸۰,۰۰۰ تومان
+</div>
+
+<button class="add-btn">
+افزودن به سبد
+</button>
+
+</div>
+
+
+
+<div class="product">
+
+<h3>🍨 بستنی سنتی زعفرانی</h3>
+
+<p>طعم اصیل و خوش عطر</p>
+
+<div class="price">
+۹۰,۰۰۰ تومان
+</div>
+
+<button class="add-btn">
+افزودن به سبد
+</button>
+
+</div>
+
+
+
+<div class="product">
+
+<h3>🍫 بستنی شکلاتی</h3>
+
+<p>با شکلات ویژه</p>
+
+<div class="price">
+۹۵,۰۰۰ تومان
+</div>
+
+<button class="add-btn">
+افزودن به سبد
+</button>
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- بخش آبمیوه ها -->
+
+<section id="juice" class="products hidden">
+
+
+<div class="product">
+
+<h3>🍊 آب پرتقال طبیعی</h3>
+
+<p>تازه و خنک</p>
+
+<div class="price">
+۷۰,۰۰۰ تومان
+</div>
+
+<button class="add-btn">
+افزودن به سبد
+</button>
+
+</div>
+
+
+
+
+<div class="product">
+
+<h3>🍉 آب هندوانه</h3>
+
+<p>مناسب روزهای گرم</p>
+
+<div class="price">
+۶۵,۰۰۰ تومان
+</div>
+
+<button class="add-btn">
+افزودن به سبد
+</button>
+
+</div>
+
+
+
+
+<div class="product">
+
+<h3>🍈 آب طالبی</h3>
+
+<p>طعم شیرین و تازه</p>
+
+<div class="price">
+۸۰,۰۰۰ تومان
+</div>
+
+<button class="add-btn">
+افزودن به سبد
+</button>
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- بخش معجون ها -->
+
+<section id="shake" class="products hidden">
+
+
+<div class="product">
+
+<h3>🍌 معجون مخصوص</h3>
+
+<p>موز، گردو و بستنی</p>
+
+<div class="price">
+۱۲۰,۰۰۰ تومان
+</div>
+
+<button class="add-btn">
+افزودن به سبد
+</button>
+
+</div>
+
+
+
+
+<div class="product">
+
+<h3>🍫 معجون شکلاتی</h3>
+
+<p>ترکیب شکلات و بستنی</p>
+
+<div class="price">
+۱۳۰,۰۰۰ تومان
+</div>
+
+<button class="add-btn">
+افزودن به سبد
+</button>
+
+</div>
+
+
+
+
+<div class="product">
+
+<h3>🥜 معجون موز و گردو</h3>
+
+<p>مقوی و خوشمزه</p>
+
+<div class="price">
+۱۴۰,۰۰۰ تومان
+</div>
+
+<button class="add-btn">
+افزودن به سبد
+</button>
+
+</div>
+
+
+</section>
+
+<!-- سبد خرید -->
+
+<section class="cart-area">
+
+
+<h2 class="menu-title">
+🛒 سبد خرید
+</h2>
+
+
+
+<div class="cart-box" id="cartBox">
+
+سبد خرید خالی است
+
+</div>
+
+
+
+<h3 class="total">
+
+مجموع:
+<span id="total">
+0
+</span>
+تومان
+
+</h3>
+
+
+</section>
+
+
+
+
+
+<style>
+
+
+.cart-area{
+
+width:90%;
+max-width:700px;
+margin:50px auto;
+background:white;
+padding:25px;
+border-radius:25px;
+box-shadow:0 8px 25px #0002;
+
+}
+
+
+
+.cart-item{
+
+display:flex;
+justify-content:space-between;
+padding:12px;
+border-bottom:1px solid #ddd;
+
+}
+
+
+
+.total{
+
+text-align:center;
+color:#287a45;
+margin-top:20px;
+
+}
+
+
+
+</style>
+
+
+
+
+
+
+
+<script>
+
+
+// تغییر منوی محصولات
+
+function showMenu(menu){
+
+
+let sections=document.querySelectorAll(".products");
+
+
+sections.forEach(function(item){
+
+item.classList.add("hidden");
+
+});
+
+
+
+document.getElementById(menu).classList.remove("hidden");
+
+
+
+let buttons=document.querySelectorAll(".tab");
+
+
+buttons.forEach(function(btn){
+
+btn.classList.remove("active");
+
+});
+
+
+
+event.target.classList.add("active");
+
+
+}
+
+
+
+
+
+// سبد خرید
+
+
+let cart=[];
+
+
+
+let buttons=document.querySelectorAll(".add-btn");
+
+
+
+buttons.forEach(function(button){
+
+
+button.onclick=function(){
+
+
+let product=
+button.parentElement;
+
+
+let name=
+product.querySelector("h3").innerText;
+
+
+
+let priceText=
+product.querySelector(".price").innerText;
+
+
+
+let englishPrice = priceText
+.replace(/[۰-۹]/g, function(d){
+    return "۰۱۲۳۴۵۶۷۸۹".indexOf(d);
+})
+.replace(/[^0-9]/g,"");
+
+
+let price = Number(englishPrice);
+
+
+
+cart.push({
+
+name:name,
+price:price
+
+});
+
+
+
+updateCart();
+
+
+}
+
+
+});
+
+
+
+
+
+function updateCart(){
+
+
+let box=document.getElementById("cartBox");
+
+
+let total=document.getElementById("total");
+
+
+
+if(cart.length===0){
+
+box.innerHTML="سبد خرید خالی است";
+
+total.innerHTML="0";
+
+return;
+
+}
+
+
+
+let html="";
+let sum=0;
+
+
+
+cart.forEach(function(item){
+
+
+html+=`
+
+<div class="cart-item">
+
+<span>
+${item.name}
+</span>
+
+
+<span>
+${item.price.toLocaleString()}
+</span>
+
+
+</div>
+
+`;
+
+
+
+sum += item.price;
+
+
+});
+
+
+
+box.innerHTML=html;
+
+total.innerHTML=sum.toLocaleString();
+
+
+}
+
+
+
+</script>
+<!-- سفارش مشتری -->
+
+<section class="order-section">
+
+
+<h2 class="menu-title">
+🧾 ثبت سفارش
+</h2>
+
+
+
+<div class="order-box">
+
+
+<input id="customerName" placeholder="نام شما">
+
+
+<input id="customerPhone" placeholder="شماره تماس">
+
+
+<textarea id="customerAddress" placeholder="آدرس تحویل"></textarea>
+
+
+<button class="add-btn" onclick="createInvoice()">
+ساخت فاکتور
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- فاکتور -->
+
+
+<section>
+
+
+<h2 class="menu-title">
+📄 فاکتور سفارش
+</h2>
+
+
+
+<div class="invoice-box" id="invoiceBox">
+
+هنوز فاکتوری ساخته نشده
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- پرداخت -->
+
+
+<section>
+
+
+<h2 class="menu-title">
+💳 پرداخت
+</h2>
+
+
+
+<div class="payment-box">
+
+
+<p>
+شماره کارت:
+</p>
+
+
+<h3>
+XXXX-XXXX-XXXX-XXXX
+</h3>
+
+
+<p>
+بعد از پرداخت، رسید را داخل چت ارسال کنید.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<style>
+
+
+.order-box,
+.invoice-box,
+.payment-box{
+
+width:90%;
+max-width:700px;
+margin:20px auto;
+background:white;
+padding:25px;
+border-radius:25px;
+box-shadow:0 8px 25px #0002;
+
+}
+
+
+
+.order-box input,
+.order-box textarea{
+
+width:100%;
+padding:15px;
+margin:8px 0;
+border-radius:15px;
+border:1px solid #ddd;
+
+}
+
+
+
+.order-box textarea{
+
+height:100px;
+
+}
+
+
+
+.invoice-box{
+
+line-height:2;
+
+}
+
+
+
+.payment-box{
+
+text-align:center;
+
+}
+
+
+</style>
+
+
+
+
+
+<script>
+
+
+function createInvoice(){
+
+
+let name =
+document.getElementById("customerName").value;
+
+
+let phone =
+document.getElementById("customerPhone").value;
+
+
+let address =
+document.getElementById("customerAddress").value;
+
+
+
+let total =
+document.getElementById("total").innerText;
+
+
+
+document.getElementById("invoiceBox").innerHTML = `
+
+
+<h3>
+فاکتور بستنی غدیر و قادر
+</h3>
+
+
+<p>
+نام مشتری: ${name}
+</p>
+
+
+<p>
+شماره تماس: ${phone}
+</p>
+
+
+<p>
+آدرس: ${address}
+</p>
+
+
+<hr>
+
+
+<p>
+مبلغ نهایی:
+${total} تومان
+</p>
+
+
+<p>
+وضعیت:
+در انتظار پرداخت
+</p>
+
+
+`;
+
+
+
+}
+
+
+</script>
+<!-- چت سفارش -->
+
+<section class="chat-section">
+
+
+<h2 class="menu-title">
+💬 چت سفارش
+</h2>
+
+
+
+<div class="chat-box">
+
+
+<div id="messages" class="messages">
+
+پیام‌ها اینجا نمایش داده می‌شوند
+
+</div>
+
+
+
+<div class="chat-input">
+
+
+<input 
+id="messageInput"
+placeholder="پیام خود را بنویسید..."
+>
+
+
+
+<button onclick="sendMessage()">
+ارسال
+</button>
+
+
+</div>
+
+
+
+<div class="upload">
+
+
+<label>
+📷 ارسال رسید پرداخت
+</label>
+
+
+<input 
+type="file"
+accept="image/*"
+id="receipt"
+onchange="showReceipt(event)"
+>
+
+
+<div id="preview"></div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<style>
+
+
+.chat-box{
+
+width:90%;
+max-width:700px;
+margin:20px auto 50px;
+background:white;
+padding:25px;
+border-radius:25px;
+box-shadow:0 8px 25px #0002;
+
+}
+
+
+
+.messages{
+
+height:200px;
+overflow:auto;
+background:#fff7ed;
+padding:15px;
+border-radius:15px;
+margin-bottom:15px;
+
+}
+
+
+
+.message{
+
+background:#287a45;
+color:white;
+padding:10px;
+border-radius:15px;
+margin:8px 0;
+
+}
+
+
+
+.chat-input{
+
+display:flex;
+gap:10px;
+
+}
+
+
+
+.chat-input input{
+
+flex:1;
+padding:12px;
+border-radius:20px;
+border:1px solid #ddd;
+
+}
+
+
+
+.chat-input button{
+
+background:#287a45;
+color:white;
+border:0;
+padding:12px 25px;
+border-radius:20px;
+
+}
+
+
+
+.upload{
+
+margin-top:25px;
+text-align:center;
+
+}
+
+
+
+#preview img{
+
+max-width:200px;
+margin-top:15px;
+border-radius:15px;
+
+}
+
+
+</style>
+
+
+
+
+
+
+
+<script>
+
+
+function sendMessage(){
+
+
+let input =
+document.getElementById("messageInput");
+
+
+let text=input.value;
+
+
+if(text.trim()=="")
+return;
+
+
+
+let box=
+document.getElementById("messages");
+
+
+
+box.innerHTML += `
+
+<div class="message">
+${text}
+</div>
+
+`;
+
+
+
+input.value="";
+
+
+}
+
+
+
+
+
+function showReceipt(event){
+
+
+let file =
+event.target.files[0];
+
+
+if(!file)
+return;
+
+
+
+let image =
+URL.createObjectURL(file);
+
+
+
+document.getElementById("preview").innerHTML=`
+
+<img src="${image}">
+
+<p>
+رسید آماده ارسال شد
+</p>
+
+`;
+
+
+
+}
+
+
+</script>
+
+
+
+
+
+</body>
+
+</html>
